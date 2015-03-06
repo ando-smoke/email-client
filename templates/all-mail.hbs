@@ -4,8 +4,11 @@
   <button class="btn btn-primary btn-xs br-margin-bottom">Add Message</button>
 {{/link-to}}
 
-<ul>
+<table>
   {{#each}}
-    <li>{{fromAddress}} {{subject}} {{createDate}}</li>
+    <tr>
+      <td>{{fromAddress}}</td>
+      <td>{{subject}}</td>
+    </tr>
   {{/each}}
-</ul>
+</table>

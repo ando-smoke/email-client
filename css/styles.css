@@ -3,6 +3,24 @@ body {
   padding-top: 70px;
 }
 
+td {
+  padding: 7px 10px 10px 20px;
+}
+
+tr {
+  border-top: thin solid #98A9C3;
+  border-bottom: thin solid #98A9C3;
+}
+
 .br-margin-bottom {
   margin-bottom: 25px;
+}
+
+#msg-from-address {
+  min-width: 500px;
+  margin-right: 20px;
+}
+
+#msg-subject {
+  left: 400px;
 }
