@@ -7,8 +7,13 @@
 <table>
   {{#each}}
     <tr>
-      <td>{{fromAddress}}</td>
-      <td>{{subject}}</td>
+      <td>
+        {{#link-to 'mail' this.id}}{{fromAddress}}{{/link-to}}
+      </td>
+      <td>
+        {{#link-to 'mail' this.id}}{{subject}}{{/link-to}}
+      </td>
     </tr>
+
   {{/each}}
 </table>
