@@ -8,10 +8,14 @@
   {{#each}}
     <tr>
       <td>
-        {{#link-to 'mail' this.id}}{{fromAddress}}{{/link-to}}
+        {{#link-to 'mail' this.id classNames='links-no-color'}}
+          {{fromAddress}}
+        {{/link-to}}
       </td>
       <td>
-        {{#link-to 'mail' this.id}}{{subject}}{{/link-to}}
+        {{#link-to 'mail' this.id classNames='links-no-color'}}
+          {{subject}}
+        {{/link-to}}
       </td>
     </tr>
 
