@@ -1,3 +1,4 @@
 EmailClient.AllMailController = Ember.ArrayController.extend({
-  sortProperties: ['createDate:desc']
+  sortProperties: ['createDate'],
+  sortAscending: false
 });
