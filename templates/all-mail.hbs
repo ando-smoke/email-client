@@ -1,7 +1,11 @@
-<h2>All Messages</h2>
+<h2 class='br-margin-bottom'>All Mail</h2>
+
+{{#link-to 'new-mail'}}
+  <button class="btn btn-primary btn-xs br-margin-bottom">Add Message</button>
+{{/link-to}}
 
 <ul>
   {{#each}}
-    <li>{{fromAddress}} {{subject}}</li>
+    <li>{{fromAddress}} {{subject}} {{createDate}}</li>
   {{/each}}
 </ul>
