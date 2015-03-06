@@ -1,1 +1,3 @@
-EmailClient = Ember.Application.create();
+EmailClient = Ember.Application.create({
+  LOG_TRANSITIONS: true
+});
