@@ -5,9 +5,14 @@ EmailClient.NewMailController = Ember.Controller.extend({
         fromAddress: this.get('from'),
         toAddress: this.get('to'),
         subject: this.get('subject'),
-        body: this.get('message'),
+        body: this.get('body'),
         createDate: Date.now()
       });
+
+      this.set('from', null);
+      this.set('to', null);
+      this.set('subject', null);
+      this.set('body', null);
 
       newMail.save();
       this.transitionToRoute('all-mail');
