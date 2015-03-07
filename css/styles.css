@@ -3,6 +3,10 @@ body {
   padding-top: 70px;
 }
 
+table {
+  width: 600px;
+}
+
 td {
   padding: 7px 10px 10px 20px;
 }
@@ -12,19 +16,14 @@ tr {
   border-bottom: thin solid #98A9C3;
 }
 
+td.tbl-col-1 {
+  width: 70px;
+}
+
 .br-margin-bottom {
   margin-bottom: 25px;
 }
 
 .links-no-color {
   color: black;
-}
-
-#msg-from-address {
-  min-width: 500px;
-  margin-right: 20px;
-}
-
-#msg-subject {
-  left: 400px;
 }
